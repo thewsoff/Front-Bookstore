@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Front Bookstore</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h1>Bookstore</h1>
+        <div id="form-login" class="form active">
+            <h2>Login</h2>
+            <input type="email" id="login-email" placeholder="Digite seu email" required>
+            <input type="password" id="login-password" placeholder="Digite sua senha" required>
+            <button onclick="handleLogin()">Entrar</button>
+            <p>Não tem conta? <span class="toggle" onclick="showRegister()">Registre-se</span></p>
+        </div>
+
+        <div id="form-register" class="form">
+            <h2>Registrar</h2>
+            <input type="text" id="register-name" placeholder="Digite seu nome" required>
+            <input type="email" id="register-email" placeholder="Digite seu email" required>
+            <input type="password" id="register-password" placeholder="Digite sua senha" required>
+            <button onclick="handleRegister()">Registrar</button>
+            <p>Já tem conta? <span class="toggle" onclick="showLogin()">Faça login</span></p>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
